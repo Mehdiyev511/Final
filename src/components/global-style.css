@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&family=Play&display=swap');
+
+:root {
+    --blue: #00bfe7;
+    --rgba-gray: #2d2d5a;
+    --muted-gray: #adadad;
+    --dark-gray: #757576;
+    --bg-box: #100028;
+}
+
+/* global - container */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* ======= animation - header ======= */
+ 
+/* btn - show */
+.slideInDown {
+    animation-name: slideInDown;
+    animation-duration: 1s;
+    animation-fill-mode: both;
+}
+
+ @keyframes slideInDown {
+    0% {
+        max-height: 0;
+    }
+    100% {
+        max-height: 240px;
+    }
+} 
+
+/* btn - hide */
+.slideOutUp {
+    animation-name: slideOutUp;
+    animation-duration: 1s;
+    animation-fill-mode: both;
+}
+
+@keyframes slideOutUp {
+    0% {
+        max-height: 240px;
+    }
+    100% {
+        max-height: 0;
+    }
+}
+
+/* animation scroll */
+@keyframes scroll-header-show {
+    from {
+      top: -50px;
+    }
+  
+    to {
+      top: 0;
+    }
+}
+
+.showHeader {
+    animation-name: scroll-header-show;
+    animation-duration: 1s;
+    animation-fill-mode: both;
+}
+
+/* ======= animation - main content portfolio ======= */
+
+.fadeIn {
+    animation-name: fadeIn;
+    animation-duration: 1s;
+    animation-fill-mode: both;
+}
+  
+@keyframes fadeIn {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+} 
+
+.fadeOut {
+    animation-name: fadeOut;
+    animation-duration: 1s;
+    animation-fill-mode: both;
+}
+  
+@keyframes fadeOut {
+    0% {opacity: 1;}
+    100% {opacity: 0;}
+} 
+
